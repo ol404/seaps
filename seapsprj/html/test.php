@@ -37,24 +37,32 @@
 <body>
     <div class="filters">
         <!-- data filter for date -->
-        <div class="filters-content">
-            <label for="date-filter">Filter by Date:</label>
-            <input type="date" id="date-filter" name="date-filter" value="<?php echo date("Y-m-d"); ?>">
+        <div class="filters-content" id="filter-container">
+            <label for="year-filter">Year:</label>
+            <select id="year-filter"></select>
+
+            <label for="month-filter">Month:</label>
+            <select id="month-filter"></select>
+
+            <label for="date-filter">Date:</label>
+            <select id="date-filter"></select>
         </div>
+
             <!-- dropdown filter for emergenency type -->
-        <div class="filters-content">   
-            <label for="category-dropdown">Emergency Type:</label>  
-                <select id="category-dropdown"></select>
-            <label for="subcategory-dropdown">Emergency Specific:</label> 
-                <select id="subcategory-dropdown"></select>
+        <div class="filters-content" id="category-filter">
+            <label for="category-dropdown">Emergency Type:</label>
+            <select id="category-dropdown"></select>
+            <label for="subcategory-dropdown">Emergency Specific:</label>
+            <select id="subcategory-dropdown"></select>
         </div>
         <div class="btn">
-            <button name= "applyfilter" id= "applyfilter">Apply</button>
+            <button name="applyfilter" id="applyfilter">Apply</button>
         </div>
     </div>
 </form>
-<script   src= "js/filter.js">
-</script>
+<script src="js/date.js"></script>
+<script   src= "js/categories.js" async></script>
+<script src="js/apply.js" defer></script>
 <body>
     <div id="map"></div>
             <!-- google map api-->

@@ -16,6 +16,5 @@ if ($stmt->rowCount() > 0) {
 } else {
     echo json_encode(array('message' => 'No results found')); // Output empty array with message
 }
-?>
 
 

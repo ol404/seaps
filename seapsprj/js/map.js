@@ -1,3 +1,6 @@
+// Define the 'locateMarkers' array globally to be accessible
+const locateMarkers = [];
+
 function initMap() {
     // Map options
     const options = {
